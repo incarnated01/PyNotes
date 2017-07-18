@@ -43,3 +43,10 @@ fileToString = myfile.read()
 myfile.close()
 
 #All these functions can be ran on binary files with open("filename", "rb") "wb", or "ab"
+
+#Split
+a, b, c = lineFromFile.split("delimiter")
+phone = "888-222-5555"
+area, pref, suff = phone.split("-")
+print("("+area+")"+pref+"-"+suff)
+#>>>(888)222-5555
